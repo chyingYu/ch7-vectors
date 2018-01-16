@@ -21,21 +21,23 @@ m<- (seq(10,1))
 # Subtract `m` FROM `n`. Note the recycling!
 
 m-n
+
 # Use the `seq()` function to produce a range of numbers from -5 to 10 in `.1`
 # increments. Store it in a variable `x.range`
-
+x.range <- seq(-5, 10, .1)
 
 # Create a vector `sin.wave` by calling the `sin()` function on each element 
 # in `x.range`.
-
+sin.wave <- sin(x.range)
 
 # Create a vector `cos.wave` by calling the `cos()` function on each element 
 # in `x.range`.
-
+cos.wave <- cos(x.range)
 
 # Create a vector `wave` by multiplying `sin.wave` and `cos.wave` together, then
 # adding `sin.wave` to the product
-
+wave <- (sin.wave * cos.wave) + sin.wave
 
 # Use the `plot()` function to plot your `wave`!
+plot(wave)
 
